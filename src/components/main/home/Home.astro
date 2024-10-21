@@ -1,115 +1,73 @@
 ---
 import { Image } from "astro:assets";
-import photoperfil from "../../../../public/img/photo-perfil.webp";
+import photoprofile from "../../../../public/img/pp.jpg";
 ---
 
-<div class="content-presentation">
-  <div class="linear-gradient-2"></div>
-  <div class="linear-gradient-1"></div>
-  <dir class="container-persentation">
-    <div class="container-text">
-      <!-- <h2 class="text-hello">Hola <strong>soy</strong></h2> -->
-      <h2 class="text-name">Osnaider Martinez</h2>
+<div class="contenu-presentation">
+  <div class="degrade-lineaire-2"></div>
+  <div class="degrade-lineaire-1"></div>
+  <dir class="container-presentation">
+    <div class="container-texte">
+      <!-- <h2 class="texte-bonjour">Bonjour <strong>je suis</strong></h2> -->
+      <h2 class="texte-nom">Djebassi Ramy</h2>
       <div class="container-profession">
         <div>
-          <span class="p-profession">D</span>
-          <span class="p-profession">e</span>
-          <span class="p-profession">s</span>
-          <span class="p-profession">a</span>
-          <span class="p-profession">r</span>
-          <span class="p-profession">r</span>
-          <span class="p-profession">o</span>
-          <span class="p-profession">l</span>
-          <span class="p-profession">l</span>
-          <span class="p-profession">a</span>
-          <span class="p-profession">d</span>
-          <span class="p-profession">o</span>
-          <span class="p-profession">r</span>
+          <span class="p-profession">Concepteur Développeur d'Applications</span>
           <span class="">&nbsp;</span>
         </div>
         <div class="">
-          <span class="p-profession">F</span>
-          <span class="p-profession">r</span>
-          <span class="p-profession">o</span>
-          <span class="p-profession">n</span>
-          <span class="p-profession">t</span>
-          <span class="p-profession">-</span>
-          <span class="p-profession">e</span>
-          <span class="p-profession">n</span>
-          <span class="p-profession">d</span>
+          <span class="p-profession">Web et mobile JR</span>
           <span class="">&nbsp;</span>
-          <span class="p-profession">J</span>
-          <span class="p-profession">r</span>
         </div>
       </div>
-      <p class="p-presentation">
-        Con más de 1 año de experiencia en la creación de experiencias web
-        atractivas y funcionales. Experto en tecnologías front-end, incluyendo
-        HTML5, CSS3, JavaScript y frameworks como React, Next.js, Astro. Capaz
-        de traducir diseños creativos en código interactivo y optimizar la
-        velocidad y el rendimiento del sitio web.
+          <p class="p-presentation">
+            Passionné par le développement d'applications web et mobile, je crée des solutions innovantes qui allient créativité et fonctionnalité. J'aime relever des défis techniques et exprimer ma créativité à travers le code.</p>
       </p>
-      <div class="container-curriculum">
-        <a href="https://wa.me/+573166026155" target="_blank" class="a-action"
-          >Hablemos</a
+      <div class="container-cv">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ramyto.rd@gmail.com" target="_blank" class="a-action"
+          >Me Contacter</a
         >
         <a
-          href="https://drive.google.com/file/d/1VKgzg5L6JUiRx5d3_kOIjIeQRmthdhM2/view?usp=sharing"
-          class="a-curriculum"
-          target="_blank">Ver Currículum</a
+          href="https://drive.google.com/file/d/1zT-fh5gm76koxcL9uictyu2-NtHnkQNK/view?usp=sharing"
+          class="a-cv"
+          target="_blank">CV</a
         >
       </div>
-      <div class="container-social">
-        <p class="">Echa un vistaso a mi</p>
-        <a href="https://github.com/Osnaider19" target="_blank">
-          <li class="li-social">
+      <div class="container-reseaux">
+        <p class="">Mes liens</p>
+        <a href="https://github.com/RamyDj" target="_blank">
+          <li class="li-reseau">
             <i class="fa-brands fa-github"></i>
           </li>
         </a>
         <a
-          href="https://www.linkedin.com/in/osnaider-mart%C3%ADnez-154b67256/"
+          href="https://www.linkedin.com/in/ramy-djebassi-9678661b0/"
           target="_blank"
         >
-          <li class="li-social">
+          <li class="li-reseau">
             <i class="fa-brands fa-linkedin"></i>
           </li>
         </a>
       </div>
     </div>
-    <div class="container-photo-profile">
-      <div class="photo-perfil">
+    <div class="container-photo-profil">
+      <div class="photo-profil">
         <picture>
           {/* If you are not using vercel, place a normal <img> tag */}
-          <Image src={photoperfil} alt="Osnaider Martinez" id="inicio" />
+          <Image src={photoprofile} alt="Djebassi Ramy" id="debut" />
         </picture>
       </div>
     </div>
   </dir>
 </div>
 
-<script>
-  const letters = document.querySelectorAll(".p-profesion");
-  letters.forEach((letter) => {
-    letter.addEventListener("mouseenter", () => {
-      toogle(letter);
-    });
-  });
-
-  function toogle(letter) {
-    letter.classList.add("bouncing");
-    letter.addEventListener("animationend", () => {
-      letter.classList.remove("bouncing");
-    });
-  }
-</script>
-
 <style>
-  .content-presentation {
+  .contenu-presentation {
     position: relative;
     width: 100%;
     height: 100%;
   }
-  .linear-gradient-1 {
+  .degrade-lineaire-1 {
     position: absolute;
     left: 0;
     top: 0;
@@ -123,7 +81,7 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
     );
     z-index: 0;
   }
-  .linear-gradient-2 {
+  .degrade-lineaire-2 {
     position: absolute;
     right: 0;
     top: 0;
@@ -138,7 +96,7 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
     z-index: 0;
   }
 
-  .container-persentation {
+  .container-presentation {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -147,17 +105,17 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
     margin: 0 auto;
     max-width: 1355px;
   }
-  .container-text {
+  .container-texte {
     position: relative;
     width: 50%;
     color: #f6f6f9;
   }
-  .text-hello {
+  .texte-bonjour {
     padding: 10px 0;
     font-size: 20px;
   }
 
-  .text-name {
+  .texte-nom {
     padding: 5px 0;
     font-size: 30px;
     color: #01be96;
@@ -175,35 +133,13 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
     cursor: pointer;
     display: inline-block;
     text-transform: capitalize;
+    color: #f6f6f9
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   }
 
-  .bouncing {
-    transition: 0.8s all;
-    color: #01be96;
-    animation: rubberband 400ms alternate ease-out;
-  }
-
-  @keyframes rubberband {
-    10% {
-      transform: scaleX(1);
-    }
-    40% {
-      transform: scaleX(1.12) scaleY(0.75);
-    }
-    55% {
-      transform: scaleX(0.85) scaleY(1);
-    }
-    75% {
-      transform: scaleX(0.9) scaleY(1);
-    }
-    90% {
-      transform: scaleX(1.85) scaleY(0.95);
-    }
-    100% {
-      transform: scaleX(1) scaleY(1);
-    }
-  }
+  .p-profession:hover {
+  color: #01be96; /* Vert au survol */
+}
 
   .p-presentation {
     padding: 12px 0;
@@ -212,7 +148,7 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
     text-align: left;
   }
 
-  .container-curriculum {
+  .container-cv {
     position: relative;
     padding: 40px 0;
     display: flex;
@@ -235,7 +171,7 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
     transform: translateX(4px);
   }
 
-  .a-curriculum {
+  .a-cv {
     position: relative;
     display: flex;
     justify-content: center;
@@ -248,12 +184,12 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
     transition: 0.3s;
   }
 
-  .a-curriculum:hover {
+  .a-cv:hover {
     background-color: rgba(1, 190, 150, 0.3);
     transform: translateX(4px);
   }
 
-  .container-social {
+  .container-reseaux {
     position: relative;
     width: 100%;
     display: flex;
@@ -262,11 +198,11 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
     gap: 15px;
   }
 
-  .container-social a {
+  .container-reseaux a {
     text-decoration: none;
   }
 
-  .li-social {
+  .li-reseau {
     position: relative;
     list-style: none;
     background-color: #01be96;
@@ -278,23 +214,23 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
     width: 40px;
   }
 
-  .li-social i {
+  .li-reseau i {
     font-size: 25px;
     color: #f6f6f9;
   }
 
-  .li-social:hover {
+  .li-reseau:hover {
     transform: rotate(-360deg);
   }
 
-  .container-photo-profile {
+  .container-photo-profil {
     position: relative;
     width: 50%;
     display: flex;
     justify-content: center;
   }
 
-  .photo-perfil {
+  .photo-profil {
     position: relative;
     display: flex;
     justify-content: center;
@@ -312,53 +248,52 @@ import photoperfil from "../../../../public/img/photo-perfil.webp";
     /* border-radius: 64% 36% 29% 71% / 59% 79% 21% 41%; */
   }
 
-  .photo-perfil img {
-    position: relative;
-    display: block;
-    object-fit: cover;
-    height: 100%;
+  .photo-profil img {
+  position: relative;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(-10px -5px 10px #000) contrast(110%);
+  transition: 0.3s;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .container-presentation {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 30px;
+    padding-top: 100px;
+  }
+  .container-photo-profil {
     width: 100%;
-    filter: drop-shadow(-10px -5px 10px #000) contrast(110%);
-    transition: 0.3s;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
   }
+  .photo-profil {
+    margin: 0;
+  }
+  .container-texte {
+    width: 100%;
+  }
+}
 
-   {
-    /* responsive*/
+@media (max-width: 640px) {
+  .p-presentation {
+    width: 100%;
   }
-  @media (max-width: 900px) {
-    .container-persentation {
-      flex-direction: column-reverse;
-      height: auto;
-      gap: 30px;
-      padding-top: 100px;
-    }
-    .container-photo-profile {
-      width: 100%;
-      justify-content: center;
-      justify-items: center;
-      margin: 0;
-    }
-    .photo-perfil {
-      margin: 0;
-    }
-    .container-text {
-      width: 100%;
-    }
-  }
+}
 
-  @media (max-width: 640px) {
-    .p-presentation {
-      width: 100%;
-    }
+@media (max-width: 500px) {
+  .container-cv {
+    display: flex;
+    gap: 10px;
   }
+  .degrade-lineaire-1 {
+    display: none;
+  }
+}
 
-  @media (max-width: 500px) {
-    .container-curriculum {
-      display: flex;
-      gap: 10px;
-    }
-    .linear-gradient-1 {
-      display: none;
-    }
-  }
 </style>
